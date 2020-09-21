@@ -21,7 +21,8 @@ These types of resources are supported:
 
 ```hcl
 module "storage" {
-  source = "github.com/tietoevry-infra-as-code/terraform-azurerm-storage?ref=v2.0.0"
+  source  = "kumarvna/storage/azurerm"
+  version = "2.1.0"
 
   # By default, this module will not create a resource group
   # proivde a name to use an existing resource group, specify the existing resource group name,
@@ -112,7 +113,8 @@ The default action set to `Allow` when no network rules matched. A `subnet_ids` 
 
 ```hcl
 module "storage" {
-  source = "github.com/tietoevry-infra-as-code/terraform-azurerm-storage?ref=v2.0.0"
+  source  = "kumarvna/storage/azurerm"
+  version = "2.1.0"
 
   # .... omitted
 
@@ -144,7 +146,8 @@ This module supports the implementation of storage lifecycle management. If spec
 
 ```hcl
 module "storage" {
-  source = "github.com/tietoevry-infra-as-code/terraform-azurerm-storage?ref=v2.0.0"
+  source  = "kumarvna/storage/azurerm"
+  version = "2.1.0"
 
   # .... omitted
 
@@ -204,7 +207,8 @@ End Date of the Project|Date when this application, workload, or service is plan
 
 ```hcl
 module "key-vault" {
-  source = "github.com/tietoevry-infra-as-code/terraform-azurerm-storage?ref=v2.0.0"
+  source  = "kumarvna/storage/azurerm"
+  version = "2.1.0"
 
   # ... omitted
 
@@ -311,7 +315,7 @@ Name | Description
 
 ## Authors
 
-Originally created by [Kumaraswamy Vithanala](mailto:kumarvna@gmail.com)
+Originally created by [Kumaraswamy Vithanala](mailto:kumaraswamy.vithanala@tieto.com)
 
 ## Other resources
 
